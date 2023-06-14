@@ -1,12 +1,13 @@
-data = ["Asahi", "Tokiya", "Seika", "Yu", "Keita", "Yoshiya", "Koma", "Takahiro", "Seiga", "Yukitaka", "Shunta", "Haruya", "Ken", "Koitsi", "Ryuki", "Ryuto"]
+data = ["さいとうきょうこ", "こさかなお", "やまぐちはるよ", "しょうげんじようこ", "さいとうあすか", "えんどうさくら", "はやしるな", "いおきまお", "わたなべりさ", "ふじよしかりん", "えんどうりこ", "たにぐちあいり", "まとのみお"]
 print(data, "名前")
 
-for i in range(0, 15):
+for i in range(len(data)):
     m = i
-    for j in range(i+1, 16):
+    for j in range(i+1, len(data)):
         if data[j] < data[m]:
             m = j
     data[i], data[m] = data[m], data[i]
-    # print(data, i+1)
 
-print(data, "ソート後のデータ")
+print('\033[35m',data[0],'\033[0m','\033[35m',data[1],'\033[0m','\033[37m',data[2],'\033[0m','\033[36m',data[3],'\033[0m','\033[35m',data[4],'\033[0m')
+print('\033[36m',data[5],'\033[0m','\033[36m',data[6],'\033[0m','\033[37m',data[7],'\033[0m','\033[35m',data[8],'\033[0m','\033[37m',data[9],'\033[0m')
+print('\033[37m',data[10],'\033[0m','\033[36m',data[11],'\033[0m','\033[37m',data[12],'\033[0m')
